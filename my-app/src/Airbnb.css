@@ -1,0 +1,79 @@
+.listing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.listing-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 500px;
+  background-color: white;
+}
+
+.listing-item h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.listing-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.listing-details {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.image-hover-zoom {
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+
+.image-hover-zoom img {
+  width: 100%;
+  transition: transform .5s ease;
+}
+
+.image-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+
+
+.sticky-search-form {
+  position: sticky;
+  top: 0; /* Adjust this to change the distance from the top */
+  background-color: white;
+  padding: 10px;
+  z-index: 100; /* Ensure it stays above other content */
+  border-bottom: 1px solid #ddd; /* Optional for styling */
+}
+
+
+
+
+
+.rental-form-container,
+.login-form-container {
+  max-width: 500px; /* or whatever maximum width you prefer */
+  margin: auto; /* centers the form in the middle of the page */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* gives a subtle shadow to the form */
+}
+
+
+
+
+

@@ -1,0 +1,66 @@
+.rental-form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .rental-form {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  .rental-form input,
+  .rental-form textarea,
+  .rental-form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .rental-form textarea {
+    resize: vertical;
+  }
+  
+  .rental-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rental-form button:hover,
+  .rental-form button:focus {
+    background-color: #003d82;
+  }
+  
+  .rental-form label {
+    font-weight: bold;
+  }
+
+
+.rental-form-container {
+    max-width: 500px;
+    margin: 0; 
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    z-index: 10; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .rental-form-container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+  

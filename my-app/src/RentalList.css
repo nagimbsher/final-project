@@ -1,0 +1,39 @@
+
+.rental-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rental-item {
+    background-color: #f3f3f3;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .rental-property-name {
+    font-weight: bold;
+  }
+  
+  .rental-location {
+    color: #666;
+  }
+  
+  .apply-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

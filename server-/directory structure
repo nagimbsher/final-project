@@ -1,0 +1,22 @@
+
+
+- backend-
+
+- config
+- dbConfig.js             // Database configuration
+
+- controllers
+
+- authController.js      // Authentication controller
+- airbnbController.js    // Airbnb controller
+- RentinController.js
+
+- routes
+
+- airbnbRoutes.js       // Airbnb routes
+- authRoutes.js        // Authentication routes
+- RentinRoutes.js     //
+
+- .env                 // Environment variables 
+- package.json
+- server.js           // Express application setup
