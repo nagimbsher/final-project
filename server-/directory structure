@@ -9,14 +9,14 @@
 
 - authController.js      // Authentication controller
 - airbnbController.js    // Airbnb controller
-- RentinController.js
+- RentinController.js    // Rentin Controller
 
 - routes
 
-- airbnbRoutes.js       // Airbnb routes
-- authRoutes.js        // Authentication routes
-- RentinRoutes.js     //
-
+- airbnbRoutes.js        // Airbnb routes
+- authRoutes.js         // Authentication routes
+- RentinRoutes.js      // Rentin Routes
+ 
 - .env                 // Environment variables 
 - package.json
 - server.js           // Express application setup
