@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../my-app"
+		},
+		{
+			"path": "../routes"
+		},
+		{
+			"path": "../controllers"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

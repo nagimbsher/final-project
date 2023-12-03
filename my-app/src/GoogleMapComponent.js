@@ -1,4 +1,5 @@
-import { GoogleMap, Marker } from '@react-google-maps/api';
+import React, { useState } from 'react';
+import { GoogleMap, Marker, InfoWindow } from '@react-google-maps/api';
 const calculateMapCenter = (listings) => {
   if (!listings || listings.length === 0) {
     return { lat: 0, lng: 0 }; 
@@ -18,13 +19,13 @@ const calculateMapCenter = (listings) => {
 };
 
 const GoogleMapComponent = ({ listings }) => {
-  
+  const [selectedListing, setSelectedListing] = useState(null);
   const mapCenter = calculateMapCenter(listings);
 
   return (
     <GoogleMap
-      mapContainerStyle={{ width: '10%vw', height: '10vh' }}
-      zoom={5}
+      mapContainerStyle={{ width: '100%', height: '100vh' }}
+      zoom={13}
       center={mapCenter}
       options={{
         zoomControl: false,
@@ -32,20 +33,26 @@ const GoogleMapComponent = ({ listings }) => {
         mapTypeControl: false,
         fullscreenControl: false,
       }}
-      
     >
-      
-      {listings && listings.map((listing) => (
+      {listings.map((listing) => (
         <Marker
           key={listing.id}
           position={{ lat: listing.latitude, lng: listing.longitude }}
-        />
+          onClick={() => setSelectedListing(listing)}
+        >
+          {selectedListing === listing && (
+            <InfoWindow onCloseClick={() => setSelectedListing(null)}>
+              <div>
+                <h3>{listing.apartment}</h3>
+                <p>Price: ${listing.price}</p>
+              </div>
+            </InfoWindow>
+          )}
+        </Marker>
       ))}
     </GoogleMap>
   );
 };
 
 export default GoogleMapComponent;
-
-
 

@@ -1,3 +1,4 @@
+
 .listing-container {
     display: flex;
     justify-content: space-between;
@@ -15,8 +16,7 @@
     height: 100%; 
     z-index: 1; 
   }
-  
-
+   
 /*   
   .sticky-search-bar {
     position: -webkit-sticky; 

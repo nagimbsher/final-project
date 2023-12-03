@@ -5,7 +5,11 @@ import './MapComponent.css';
 
 const googleMapsApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-const MapComponent = ({ listings = [] }) => {
+const MapComponent = ({ listings = [
+  {id: 12, latitude: 31.81408456741037,longitude: 35.083332638020714, apartment: 'Apartment 12',price: 150.00}
+  
+]
+}) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchChange = (event) => {
@@ -15,7 +19,6 @@ const MapComponent = ({ listings = [] }) => {
   const handleSearch = () => {
     console.log('Search for:', searchTerm);
   };
-
   const filteredListings = listings.filter(listing =>
     listing.apartment.toLowerCase().includes(searchTerm.toLowerCase())
   );

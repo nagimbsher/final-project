@@ -5,6 +5,7 @@ import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons"; 
 import {faMugSaucer}  from "@fortawesome/free-solid-svg-icons";
 
+
 const Navbar = () => {
   return (
     <div className="navbar">
