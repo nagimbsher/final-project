@@ -14,12 +14,12 @@ function LoginPage() {
 
   const handleLoginSubmit = (event) => {
     event.preventDefault();
-    // Implement login logic
+    
   };
 
   const handleSignupSubmit = (event) => {
     event.preventDefault();
-    // Implement signup logic
+    
   };
 
   return (
